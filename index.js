@@ -1,4 +1,5 @@
 const express = require('express')
+var cors = require('cors')
 const app = express()
 const createTable = require('./pdf')
 const pdf = require('html-pdf')
@@ -6,6 +7,7 @@ const { response } = require('express')
 const config = require('dotenv').config()
 
 app.use(express.json())
+app.use(cors())
 
 app.post('/getPdf', (request, response) => {
     try {
