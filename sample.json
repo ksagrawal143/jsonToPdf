@@ -1,7 +1,7 @@
 {
     "bill_no":10,
     "bill_to":"lol",
-    "cashier_name":"Ravi",
+    "mob_no":9211420101,
     "sno":[1,2],
     "item":["item1","item2"],
     "qty":[10,20],
@@ -15,7 +15,5 @@
     "cgst":20,
     "sgst":30,
     "date":"12-07-2020",
-    "total":6050,
-    "received":6000,
-    "balance":50
+    "total":6050
 }
