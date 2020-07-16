@@ -24,7 +24,7 @@ function getPdf(data) {
     })
 
 
-    var table = '<center><table style="text-align:center;width:95%;font-weight: bold;"><thead><tr><th colspan="6">Tandoor Hut</th></tr></thead><tbody><tr></tr><tr></tr><tr><td colspan="6">Godhana Road Ara<br>Phone No. 9852259112, 8340245998<br>Email: tandoorhutata@gmail.com<br>GSTIN:10HIAPK7037L1ZA<br>State: 10-Bihar</td></tr><tr></tr><tr></tr><tr><td colspan="6">TAX INVOICE</td></tr><tr></tr><tr></tr><tr><td colspan="3"></td><td colspan="2">Invoice No.</td><td>' + data['bill_no'] + '</td></tr><tr><td colspan="3"></td><td colspan="2">Date</td><td>' + data['date'] + '</td></tr><tr><td colspan="6"></td></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr><td>#</td><td colspan=2>Item Name</td><td>Price/U</td><td>Quantity</td><td>Amount</td></tr>'
+    var table = '<center><table style="text-align:center;width:95%;font-weight: bold;"><thead><tr><th colspan="6">Tandoor Hut</th></tr></thead><tbody><tr></tr><tr></tr><tr><td colspan="6">Godhana Road Ara<br>Phone No. 9852259112, 8340245998<br>Email: tandoorhutara@gmail.com<br>GSTIN:10HIAPK7037L1ZA<br>State: 10-Bihar</td></tr><tr></tr><tr></tr><tr><td colspan="6">TAX INVOICE</td></tr><tr></tr><tr></tr><tr><td colspan="3"></td><td colspan="2">Invoice No.</td><td>' + data['bill_no'] + '</td></tr><tr><td colspan="3"></td><td colspan="2">Date</td><td>' + data['date'] + '</td></tr><tr><td colspan="6"></td></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr><td>#</td><td colspan=2>Item Name</td><td>Price/U</td><td>Quantity</td><td>Amount</td></tr>'
     items.forEach(item => {
         table += `<tr> <td>${item.sno}</td> <td colspan=2>${item.item}</td> <td>${item.priceu}</td> <td>${item.qty}</td><td>${item.amount}</td> </tr>`
     })
